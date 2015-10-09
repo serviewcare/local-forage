@@ -1,3 +1,5 @@
+localForage = {};
+
 (function() {
     'use strict';
 
@@ -25,7 +27,7 @@
     // The actual localForage object that we expose as a module or via a
     // global. It's extended by pulling in one of our other libraries.
     var _this = this;
-    var localForage = {
+    localForage = {
         INDEXEDDB: 'asyncStorage',
         LOCALSTORAGE: 'localStorageWrapper',
         WEBSQL: 'webSQLStorage',

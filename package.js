@@ -5,6 +5,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  api.use('promise');
   api.add_files('drivers/indexeddb.js', 'client');
   api.add_files('drivers/localstorage.js', 'client');
   api.add_files('drivers/websql.js', 'client');

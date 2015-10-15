@@ -5,10 +5,10 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.add_files('drivers/indexeddb.js', 'client');
-  api.add_files('drivers/localstorage.js', 'client');
-  api.add_files('drivers/websql.js', 'client');
-  api.add_files('localforage.js', 'client');
+  api.add_files('drivers/indexeddb.js', 'web.cordova');
+  api.add_files('drivers/localstorage.js', 'web.cordova');
+  api.add_files('drivers/websql.js', 'web.cordova');  
+  api.add_files('localforage.js', 'web.cordova');
 
   api.export('localForage', 'web.cordova');
 });

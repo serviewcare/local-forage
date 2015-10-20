@@ -5,10 +5,12 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.add_files('drivers/indexeddb.js', 'client');
-  api.add_files('drivers/localstorage.js', 'client');
-  api.add_files('drivers/websql.js', 'client');
-  api.add_files('localforage.js', 'client');
+  api.use('promise');  
+
+  api.addFiles('drivers/indexeddb.js', 'client');
+  api.addFiles('drivers/localstorage.js', 'client');
+  api.addFiles('drivers/websql.js', 'client');
+  api.addFiles('localforage.js', 'client');
 
   api.export('localForage', 'client');
 });
